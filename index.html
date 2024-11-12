@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enhanced Audio Player</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/859e6b3ef8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="audio-player">
+    <h1>Enhanced Audio Player</h1>
+    <p id="song-info">Select a song</p>
+    <audio id="audio"></audio>
+    
+    <!-- Shuffle button added -->
+    <button onclick="shuffleTracks()" id="shuffle-button" class="shuffle-btn">
+      <i class="fas fa-random"></i>
+    </button>
+
+    <!-- Repeat button repositioned with a new class "repeat-btn" -->
+    <button onclick="toggleRepeat()" id="repeat-button" class="repeat-btn"><i class="fas fa-redo-alt"></i></button>
+
+    <div class="controls">
+      <button onclick="previousTrack()"><i class="fas fa-backward"></i></button>
+      <button onclick="togglePlayPause()" id="play-pause"><i class="fas fa-play"></i></button>
+      <button onclick="nextTrack()"><i class="fas fa-forward"></i></button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
